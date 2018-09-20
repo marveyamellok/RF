@@ -1,0 +1,12 @@
+mixin header(addLinksButton, content)
+  header.header
+    .header__left
+      .header__logo 
+        a(href="index.html").link_button
+    .header__right
+      a(href=content.phoneLink).header__phone!=content.phoneNumber
+      .header__separator
+      +langs(content.langs)
+      if type.addLinksButton
+        include ../links-button/links-button.pug
+    .header__menu

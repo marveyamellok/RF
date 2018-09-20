@@ -1,0 +1,8 @@
+mixin langs(params, content) 
+  .langs
+    p!=content.main
+    ul.langs__items
+      +pug-list(content.list, "langs__item")
+
+mixin langs__item(params, content) 
+  li.langs__item=content.lang

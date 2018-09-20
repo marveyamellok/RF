@@ -1,0 +1,12 @@
+include components/page/page.pug
+include components/mixins/mixins.pug
+include components/content-part-column/content-part-column.pug
+include components/column-item/column-item.pug
+include components/contact/contact.pug
+include components/inner-part/inner-part.pug
+include components/menu-inner/menu-inner.pug
+include components/pug-list/pug-list.pug
+
++page('')
+  +menu-inner(data.menu)
+  +inner-part(data.content.save_and_multiply)

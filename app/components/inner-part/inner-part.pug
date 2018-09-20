@@ -1,0 +1,6 @@
+mixin inner-part(content, params)
+  .inner-part
+    .inner-part__image
+      img(src="images/inner-illustrations-5.png")
+    h2.inner-part__title=content.title 
+    .inner-part-column!=content.text

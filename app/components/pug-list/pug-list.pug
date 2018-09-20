@@ -1,0 +1,9 @@
+mixin pug-list(list, mixin, params)
+  if list
+    if Array.isArray(list)
+      each item, index in list
+        +#{mixin}(item, assign({index: index}, params))&attributes(attributes)
+    else
+      | {{#each #{list.list}}}
+      +#{mixin}(list.item, assign({index: "{{@index}}"}, params))&attributes(attributes)
+      | {{/each}}
