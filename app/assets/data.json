@@ -37,7 +37,6 @@
         "current_page": "family_solutions"
       },
       {
-        "title": "Сохранить и приумножить",
         "type": "separator"
       },
       {
@@ -47,6 +46,18 @@
       {
         "title": "Контактная информация",
         "current_page": "contacts"
+      }
+    ],
+    "buttons":[
+      {
+        "text":"Raiffeisen-Online",
+        "href": "https://online.raiffeisen.ru/",
+        "class": "button_dark"
+      },
+      {
+        "text":"R-Dealer",
+        "href": "r-dealer.html",
+        "class": "button_small"
       }
     ],
     "button_text":"Скачать «Услуги FWR»",

@@ -1,5 +1,14 @@
-.links-button
-  .button.button_dark
-    a(href="https://online.raiffeisen.ru/").button__text Raiffeisen-Online
-  .button.button_small
-    a(href="r-dealer.html").button__text R-Dealer
+mixin links-button(content)
+  .links-button
+    +pug-list(content, "button")
+    //- .button.button_dark
+    //-   a(href="https://online.raiffeisen.ru/").button__text Raiffeisen-Online
+    //- .button.button_small
+    //-   a(href="r-dealer.html").button__text R-Dealer
+
+
+
+mixin button(content)
+  .button(class=content.class)
+    a(class="button__text" href=content.href)!=content.text
+     
