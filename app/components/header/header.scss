@@ -544,3 +544,19 @@
 		line-height: $PHONE-H_TABLET_REM;
 	}
 }
+
+.header__langs{
+  display: inline-block;
+  position: relative;
+  width: 35px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  vertical-align: top;
+  color: #4c3440;
+  font-family: "Futura New Book";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  cursor: pointer;
+}

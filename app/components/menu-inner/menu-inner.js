@@ -18,6 +18,7 @@ $(function(){
 
     data.menu.list.forEach(function(item,index){
       console.log(index, item );
+      console.log(item.title)
       
       var $item;
 
@@ -29,12 +30,10 @@ $(function(){
       
     });
 
-    data.menu.buttons.forEach(function(item,index){
-      var $button = $('<div class = "button ' + item.class + '"> <a href ="' + item.href + '" class="button__text">' + item.text + '</a></div>').appendTo($menu_buttons);
-    });
+    // data.menu.buttons.forEach(function(item,index){
+    //   var $button = $('<div class = "button ' + item.class + '"> <a href ="' + item.href + '" class="button__text">' + item.text + '</a></div>').appendTo($menu_buttons);
+    // });
 
-    $($download_button).html(data.menu.button_text);
-    $($footer_button).html(data.menu.footer_text);
 
   });
 

@@ -5,12 +5,17 @@ mixin menu-inner()
       ul.menu-inner__list
         .menu-inner__items
         .menu-inner__buttons
+          .button.button_dark
+            a(href="https://online.raiffeisen.ru/").button__text(data-trnslt="ROnline") 
+          .button.button_small
+            a(href="r-dealer.html").button__text(data-trnslt="RDealer")
       .menu-inner__download
         .menu-inner__download-button
           a(href="#").link_button
             .menu-inner__download-button-img
-            .menu-inner__download-button-text
-        p.menu-inner__footer
+            .menu-inner__download-button-text(data-trnslt="footer_fwr")
+        p.menu-inner__footer(data-trnslt="footer_copyright")
+
   block
 
 
@@ -26,9 +31,9 @@ mixin _menu-inner(current_city, content )
         .menu-inner__download-button
           a(href="#").link_button
             .menu-inner__download-button-img
-            .menu-inner__download-button-text!=content.button_text
-        p.menu-inner__footer!=content.footer_text
-  block
+            .menu-inner__download-button-text Скачать «Услуги FWR»
+        p.menu-inner__footer(data-trnslt="footer_link") &copy;&nbsp;2009-2017&nbsp;АО &laquo;Райффайзенбанк&raquo; <br>
+          a(href='https://www.raiffeisen.ru' target='_blank' class='menu-inner__footer-link') www.raiffeisen.ru
 
 
 

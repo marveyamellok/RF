@@ -4,9 +4,11 @@ mixin header(addLinksButton, content)
       .header__logo 
         a(href="index.html").link_button
     .header__right
-      a(href=content.phoneLink).header__phone!=content.phoneNumber
+      a(href="tel:+7-495-662-7677").header__phone +7 495 662 76 77
       .header__separator
-      +langs(content.langs)
-      if type.addLinksButton
-        include ../links-button/links-button.pug
+      .header__langs
+      //- include ../langs/langs.pug
+      //- +langs(content.langs)
+      //- if type.addLinksButton
+      //-   include ../links-button/links-button.pug
     .header__menu

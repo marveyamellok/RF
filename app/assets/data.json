@@ -5,13 +5,14 @@
     "type": "addLinksButton",
 
     "langs":{
-      "main":"ru",
+      "default": "ru",
       "list": [
         {"lang":"ru"},
         {"lang":"en"},
         {"lang":"de"}
       ]
     }
+
   },
 
   "menu": {
@@ -59,13 +60,11 @@
         "href": "r-dealer.html",
         "class": "button_small"
       }
-    ],
-    "button_text":"Скачать «Услуги FWR»",
-    "footer_text":"&copy;&nbsp;2009-2017&nbsp;АО &laquo;Райффайзенбанк&raquo; <br><a href='https://www.raiffeisen.ru' target='_blank' class='menu-inner__footer-link'>www.raiffeisen.ru</a>"
+    ]
+    
   },
 
   "content": {
-
       "save_and_multiply": {
         "title": "Сохранить и приумножить",
         "text": [
@@ -122,6 +121,29 @@
         ]
       }
 
+  },
+
+  "translates": {
+    "footer_fwr": { 
+      "ru": "Скачать «Услуги FWR»",
+      "en": "Download «Услуги FWR»",
+      "de": "Shaise «Услуги FWR»"
+    },
+    "footer_copyright": { 
+      "ru": "&copy;&nbsp;2009-2017&nbsp;АО &laquo;Райффайзенбанк&raquo; <br><a href='https://www.raiffeisen.ru' target='_blank' class='menu-inner__footer-link'>www.raiffeisen.ru</a>",
+      "en": "&copy;&nbsp;2009-2017&nbsp;АО &laquo;Raiffeisen&raquo; <br><a href='https://www.raiffeisen.ru' target='_blank' class='menu-inner__footer-link'>www.raiffeisen.ru</a>",
+      "de": "&copy;&nbsp;2009-2017&nbsp;АО &laquo;Raiffeisen(D)&raquo; <br><a href='https://www.raiffeisen.ru' target='_blank' class='menu-inner__footer-link'>www.raiffeisen.ru</a>"
+    },
+    "ROnline":{
+      "ru": "Райффайзен-Онлайн",
+      "en": "Raiffeisen-Online",
+      "de": "Raiffeisen-Online(D)"
+    },
+    "RDealer":{
+      "ru": "Р-Дилер",
+      "en": "R-Dealer",
+      "de": "R-Händler"
+    }
   }
 
 }
