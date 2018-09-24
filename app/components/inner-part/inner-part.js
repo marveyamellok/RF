@@ -1,15 +1,14 @@
-  
 
   var data;
 
   $(window).on( "main:ready", function( e, _data ) {
-    var $element = $(".inner-part");
+    var $element = $(".inner-part-content");
     
     console.log("#Inner-part: on event(main:ready)", e, _data );
     data = _data;
 
     var $inner_title = $(".inner-part__title", $element );
-    var $inner_column = $(".inner-part-column", $element );
+    // var $inner_column = $(".inner-part-column", $element );
     var $item;
     var thisTtitle;
     var thisText;
@@ -26,15 +25,22 @@
     $(window).on( "language:changed", function(e, language_name){
 
       log(page);
+      var thisTitle;
+      var thisText;
 
       $.each(data.content, function(item,index){
 
-        thisTitle = index.title;
-        thisText = index.text[language_name];
+        log(item);
+        $(".inner-part-content").html("");
 
-        //addContent(thisTitle, thisText);
+        if (item == page){
+          thisTitle = index.title;
+          thisText = index.text[language_name];
+        }
 
       });
+
+        addContent(thisTitle, thisText);
 
     });
 

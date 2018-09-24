@@ -9,7 +9,7 @@ $(function(){
 
   $(window).on( "main:ready", function( e, _data ) {
     
-    console.log("#Menu-inner: on event(main:ready)", e, _data );
+    // console.log("#Menu-inner: on event(main:ready)", e, _data );
     data = _data;
 
     var $menu_items = $(".menu-inner__items", $element );
@@ -20,11 +20,9 @@ $(function(){
     var title;
     var text;
     var $menu_item;
-
+    var $item;
 
     data.menu.list_2.forEach(function(item,index){
-      
-      var $item;
 
       if (item.text)
         content = item.text.ru;
@@ -37,6 +35,7 @@ $(function(){
 
     $(window).on( "language:changed", function(e, language_name){
       $($menu_items).html("");
+      $menu_item = [];
 
       data.menu.list_2.forEach(function(item,index){
 
@@ -44,14 +43,7 @@ $(function(){
           content = item.text[language_name];
           page = item.page;
         addContent(content, item);
-
-      log(item);
-      $menu_item = item;
       });
-
-      $menu_item = $($element ).children();
-
-      //log($menu_item)
 
     });
 
@@ -59,6 +51,7 @@ $(function(){
     $($menu_item).on('click', function(){
       $this = this;
       page = $($this).data("page");
+      log("just smth");
 
       $.each(data.content, function(item,index){
         if (item == page){
@@ -71,12 +64,11 @@ $(function(){
 
       });
 
-      log($menu_item)
-
     });
 
     $($element ).on("click", function(){
-      log($(".menu-inner__items").children())
+      // log("3")
+      // log($menu_item)
     })
 
     function addContent(content, item){
