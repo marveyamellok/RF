@@ -4,7 +4,7 @@ $(window).on( "main:ready", function( e, data ) {
   var $element = $(".langs");
   var $block = $(".header__langs");
  
-  console.log("#langs: on event(main:ready)", e, data );
+  // console.log("#langs: on event(main:ready)", e, data );
 
   var inner = $('<div class="langs"><p>' + data.header.langs.default + '</p><ul class="langs__items"></ul></div>').appendTo($block);
 
