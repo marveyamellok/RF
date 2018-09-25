@@ -15,7 +15,6 @@
 
     $(window).on( "language:changed", function(e, language_name){
 
-      log(pageNow);
       var thisTitle;
       var thisText;
 

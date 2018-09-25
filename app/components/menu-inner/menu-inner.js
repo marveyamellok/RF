@@ -32,44 +32,41 @@ $(function(){
 
     $(window).on( "language:changed", function(e, language_name){
       $($menu_items).html("");
+      $menu_item = [];
 
       data.menu.list_2.forEach(function(item,index){
 
         if (item.text)
           content = item.text[language_name];
-          page = item.page; 
+          page = item.page;
+
         addContent(content, item, page);
-
         $menu_item.push($item[0]);
-      });
-
-
-      // $menu_item = $(".menu-inner__item", $element );
-
-    });
-
-
-    $($menu_item).on('click', function(){
-      $this = this;
-      page = $($this).data("page");
-      pageNow = page;
-
-      $.each(data.content, function(item,index){
-        if (item == page){
-          $(".inner-part-content").html("");
-          title = index.title.ru;
-          text = index.text.ru;
-          $item = $('<h2 class="inner-part__title"  data-page="' + page +  '">' + title + '</h2><div>'+ text + '</div>' ).appendTo(".inner-part-content");
-        }
 
       });
 
+      menu_click($menu_item);
     });
 
-    $($element ).on("click", function(){
-      // log("3")
-      // log($menu_item)
-    })
+    function menu_click(elem, lang){
+      $(elem).on('click', function(){
+        $this = this;
+        page = $($this).data("page");
+        pageNow = page;
+
+        $.each(data.content, function(item,index){
+          if (item == page){
+            $(".inner-part-content").html("");
+              title = index.title.ru;
+              text = index.text.ru;
+              
+            $item = $('<h2 class="inner-part__title"  data-page="' + page +  '">' + title + '</h2><div>'+ text + '</div>' ).appendTo(".inner-part-content");
+          }
+        });
+      });
+    }
+
+    menu_click($menu_item);
 
     function addContent(content, item, page){
       if( item.type == 'separator' ){
