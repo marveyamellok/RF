@@ -3,49 +3,37 @@
 
   $(window).on( "main:ready", function( e, _data ) {
     var $element = $(".inner-part-content");
-    
-    console.log("#Inner-part: on event(main:ready)", e, _data );
     data = _data;
 
     var $inner_title = $(".inner-part__title", $element );
-    // var $inner_column = $(".inner-part-column", $element );
     var $item;
     var thisTtitle;
     var thisText;
 
-    // log(data.content.save_and_multiply.title)
-    // log(data.content.save_and_multiply.text)
-
-    // $item = $('<h2 class="inner-part__title" >' + data.content.save_and_multiply.title + '</h2>' ).appendTo( $element );
-    // $item = $('<div class="inner-part-column" >' + data.content.save_and_multiply.text + '</div>' ).appendTo( $element );
-
     var $first = data.content.save_and_multiply;
-    addContent($first.title, $first.text.ru);
+    addContent($first.title.ru, $first.text.ru, pageNow);
 
     $(window).on( "language:changed", function(e, language_name){
 
-      log(page);
+      log(pageNow);
       var thisTitle;
       var thisText;
 
       $.each(data.content, function(item,index){
+        $($element).html("");
 
-        log(item);
-        $(".inner-part-content").html("");
-
-        if (item == page){
-          thisTitle = index.title;
+        if (item == pageNow){
+          thisTitle = index.title[language_name];
           thisText = index.text[language_name];
         }
 
       });
-
-        addContent(thisTitle, thisText);
+      addContent(thisTitle, thisText, pageNow);
 
     });
 
-    function addContent(title, text){
-      $item = $('<div class="inner-part-content" ><h2 class="inner-part__title" >' + title + '</h2>'+ text + '</div>' ).appendTo( $element );
+    function addContent(title, text, page){
+      $item = $('<h2 class="inner-part__title"  data-page="' + page +  '">' + title + '</h2><div>'+ text + '</div>').appendTo( $element );
     }
 });
 

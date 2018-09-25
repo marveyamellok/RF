@@ -136,7 +136,11 @@
 
   "content": {
       "save_and_multiply": {
-        "title": "Сохранить и приумножить",
+        "title": {
+          "ru": "Сохранить и приумножить",
+          "en": "Save and multiply",
+          "de": "Speichern und wachsen"
+        },
         "text":
           {
             "ru":[
@@ -162,7 +166,11 @@
 
       },
       "get_founding": {
-        "title": "Получить финансирование",
+        "title":{
+            "ru": "Получить финансирование",
+            "en": "Get founding",
+            "de": "Bekommen Finanzierung"
+          },
         "text":
             {
               "ru":[
@@ -185,7 +193,11 @@
 
       },
       "business_solutions": {
-        "title": "Решение для вашего бизнеса",
+        "title": {
+            "ru": "Решение для вашего бизнеса",
+            "en": "Business solutions",
+            "de": "Die Lösung für Ihr Geschäft"
+          },
         "text":
             {
               "ru":[
@@ -208,7 +220,11 @@
 
       },
       "banking_services": {
-        "title": "Банковское обслуживание",
+        "title": {
+          "ru": "Банковское обслуживание",
+          "en": "Banking services",
+          "de": "Bankdienstleistungen"
+        },
         "text": 
             {
               "ru":[
@@ -232,7 +248,11 @@
 
       },
       "family_solutions": {
-        "title": "Решения для вашей семьи и консалтинг",
+        "title": {
+          "ru": "Решения для вашей семьи и консалтинг",
+          "en": "Family solutions",
+          "de": "Lösungen für Ihre Familie und Beratung"
+        },
         "text": 
             {
               "ru":[
@@ -255,7 +275,11 @@
 
       },
       "about": {
-        "title": "О нас",
+        "title": {
+          "ru": "О нас",
+          "en": "About us",
+          "de": "Über uns"
+        },
         "text": 
             {
               "ru":[
@@ -279,7 +303,11 @@
 
       },
       "contacts": {
-        "title": "Контактная информация",
+        "title": {
+          "ru": "Контактная информация",
+          "en": "Contacts",
+          "de": "Kontaktinformationen"
+        },
         "text": 
             {
               "ru":[

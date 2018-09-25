@@ -151,6 +151,9 @@
 	// letter-spacing: 0.47px;
 	color: $sdark;
 
+	vertical-align: top;
+  padding-top: 60px;
+
 	@include FONT-CONTENT-TEXT();
 
 	ul{
@@ -366,13 +369,11 @@
 
 	@include DESKTOP-N {
 	    width: 522px;
-	    vertical-align: middle;
 	}
 
 	@include DESKTOP-S {
 		@include font-base_s();
 	    width: 570px;
-	    vertical-align: middle;
 	}
 	
 }

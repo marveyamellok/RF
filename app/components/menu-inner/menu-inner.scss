@@ -279,6 +279,7 @@ $list-p_desktop: 40px;
 	a{
 		color: $sdark;
 		text-decoration: none;
+    pointer-events: none;
 	}
 
 	@include PHONE-N{

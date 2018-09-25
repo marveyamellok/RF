@@ -1,21 +1,17 @@
 var page = "save_and_multiply";
+var pageNow = "save_and_multiply";
 
 $(function(){
   
-  // console.log('#Menu-inner: inited');
   var $element = $(".menu-inner");
 
   var data;
 
   $(window).on( "main:ready", function( e, _data ) {
     
-    // console.log("#Menu-inner: on event(main:ready)", e, _data );
     data = _data;
 
     var $menu_items = $(".menu-inner__items", $element );
-    var $menu_buttons = $(".menu-inner__buttons", $element );
-    var $download_button = $(".menu-inner__download-button-text", $element );
-    var $footer_button = $(".menu-inner__footer", $element );
     var content;
     var title;
     var text;
@@ -27,7 +23,8 @@ $(function(){
       if (item.text)
         content = item.text.ru;
         page = item.page;
-      addContent(content, item);
+        pageNow = item.page;
+      addContent(content, item, page);
 
       $menu_item = $(".menu-inner__item", $element );
 
@@ -35,15 +32,19 @@ $(function(){
 
     $(window).on( "language:changed", function(e, language_name){
       $($menu_items).html("");
-      $menu_item = [];
 
       data.menu.list_2.forEach(function(item,index){
 
         if (item.text)
           content = item.text[language_name];
-          page = item.page;
-        addContent(content, item);
+          page = item.page; 
+        addContent(content, item, page);
+
+        $menu_item.push($item[0]);
       });
+
+
+      // $menu_item = $(".menu-inner__item", $element );
 
     });
 
@@ -51,15 +52,14 @@ $(function(){
     $($menu_item).on('click', function(){
       $this = this;
       page = $($this).data("page");
-      log("just smth");
+      pageNow = page;
 
       $.each(data.content, function(item,index){
         if (item == page){
           $(".inner-part-content").html("");
-
-          title = index.title;
+          title = index.title.ru;
           text = index.text.ru;
-          $item = $('<div class="inner-part-content" ><h2 class="inner-part__title" >' + title + '</h2>'+ text + '</div>' ).appendTo(".inner-part-content");
+          $item = $('<h2 class="inner-part__title"  data-page="' + page +  '">' + title + '</h2><div>'+ text + '</div>' ).appendTo(".inner-part-content");
         }
 
       });
@@ -71,7 +71,7 @@ $(function(){
       // log($menu_item)
     })
 
-    function addContent(content, item){
+    function addContent(content, item, page){
       if( item.type == 'separator' ){
         $item = $('<li class="menu-inner__item menu-inner__item-line"></li>' ).appendTo( $menu_items );
       }else{
