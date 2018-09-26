@@ -1,5 +1,6 @@
 var page = "save_and_multiply";
 var pageNow = "save_and_multiply";
+var languageNow;
 
 $(function(){
   
@@ -18,21 +19,27 @@ $(function(){
     var $menu_item;
     var $item;
 
+    ////////////////////////////////////заполнение меню из JSON/////////////////////////////////////////////////////////////////////
+
     data.menu.list_2.forEach(function(item,index){
 
       if (item.text)
         content = item.text.ru;
         page = item.page;
-        pageNow = item.page;
       addContent(content, item, page);
 
       $menu_item = $(".menu-inner__item", $element );
 
     });
 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    ////////////////////////////////////заполнение меню при смене языка/////////////////////////////////////////////////////////////
+
     $(window).on( "language:changed", function(e, language_name){
       $($menu_items).html("");
       $menu_item = [];
+      languageNow = language_name;
 
       data.menu.list_2.forEach(function(item,index){
 
@@ -42,13 +49,16 @@ $(function(){
 
         addContent(content, item, page);
         $menu_item.push($item[0]);
-
       });
 
       menu_click($menu_item);
     });
 
-    function menu_click(elem, lang){
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////////функуция для заполнения страницы по клику на пункте меню////////////////////////////////////
+
+    function menu_click(elem){
       $(elem).on('click', function(){
         $this = this;
         page = $($this).data("page");
@@ -57,16 +67,30 @@ $(function(){
         $.each(data.content, function(item,index){
           if (item == page){
             $(".inner-part-content").html("");
-              title = index.title.ru;
-              text = index.text.ru;
+              title = index.title;
+              text = index.text;
+
+              if (languageNow == "ru" || languageNow == undefined){
+                title = title.ru;
+                text = text.ru;
+              } else if (languageNow == "en"){
+                title = title.en;
+                text = text.en;
+              } else {
+                title = title.de;
+                text = text.de;
+              }
               
             $item = $('<h2 class="inner-part__title"  data-page="' + page +  '">' + title + '</h2><div>'+ text + '</div>' ).appendTo(".inner-part-content");
           }
         });
       });
     }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     menu_click($menu_item);
+
+    ////////////////////////////////////функуция для заполнения меню///////////////////////////////////////////////////////////////
 
     function addContent(content, item, page){
       if( item.type == 'separator' ){

@@ -19,7 +19,7 @@
       var thisText;
 
       $.each(data.content, function(item,index){
-        $($element).html("");
+        $($element).html(""); 
 
         if (item == pageNow){
           thisTitle = index.title[language_name];
