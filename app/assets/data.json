@@ -16,46 +16,6 @@
   },
 
   "menu": {
-    "list":[
-      {
-        "ru": "Сохранить и приумножить",
-        "en": "Save and multiply",
-        "de": "Speichern und wachsen"
-      },
-      {
-        "ru": "Получить финансирование",
-        "en": "Get founding",
-        "de": "Bekommen Finanzierung"
-      },
-      {
-        "ru": "Решение для вашего бизнеса",
-        "en": "Business solutions",
-        "de": "Die Lösung für Ihr Geschäft"
-      },
-      {
-        "ru": "Банковское обслуживание",
-        "en": "Banking services",
-        "de": "Bankdienstleistungen"
-      },
-      {
-        "ru": "Решения для вашей семьи и консалтинг",
-        "en": "Family solutions",
-        "de": "Lösungen für Ihre Familie und Beratung"
-      },
-      {
-        "type": "separator"
-      },
-      {
-        "ru": "О нас",
-        "en": "About us",
-        "de": "Über uns"
-      },
-      {
-        "ru": "Контактная информация",
-        "en": "Contacts",
-        "de": "Kontaktinformationen"
-      }
-    ],
     "list_2":[
       {
         "page": "save_and_multiply",
@@ -136,6 +96,7 @@
 
   "content": {
       "save_and_multiply": {
+        "image":"1",
         "title": {
           "ru": "Сохранить и приумножить",
           "en": "Save and multiply",
@@ -166,6 +127,7 @@
         }
       },
       "get_founding": {
+        "image":"2",
         "title":{
             "ru": "Получить финансирование",
             "en": "Get founding",
@@ -196,6 +158,7 @@
         }
       },
       "business_solutions": {
+        "image":"3",
         "title": {
             "ru": "Решение для вашего бизнеса",
             "en": "Business solutions",
@@ -232,6 +195,7 @@
         }
       },
       "banking_services": {
+        "image":"4",
         "title": {
           "ru": "Банковское обслуживание",
           "en": "Banking services",
@@ -262,6 +226,7 @@
         }
       },
       "family_solutions": {
+        "image":"5",
         "title": {
           "ru": "Решения для вашей семьи и консалтинг",
           "en": "Family solutions",
@@ -295,6 +260,7 @@
         }
       },
       "about": {
+        "image":"2",
         "title": {
           "ru": "О нас",
           "en": "About us",
@@ -316,6 +282,7 @@
         }
       },
       "contacts": {
+        "image":"1",
         "title": {
           "ru": "Контактная информация",
           "en": "Contacts",

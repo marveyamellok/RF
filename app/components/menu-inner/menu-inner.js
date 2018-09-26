@@ -5,13 +5,11 @@ var languageNow;
 $(function(){
   
   var $element = $(".menu-inner");
-
   var data;
 
   $(window).on( "main:ready", function( e, _data ) {
     
     data = _data;
-
     var $menu_items = $(".menu-inner__items", $element );
     var content;
     var title;
@@ -63,12 +61,14 @@ $(function(){
         $this = this;
         page = $($this).data("page");
         pageNow = page;
+        $(".inner-part-content").html("");
+        $(".inner-part__image").html("");
 
-        $.each(data.content, function(item,index){
-          if (item == page){
-            $(".inner-part-content").html("");
-              title = index.title;
-              text = index.text;
+        $.each(data.content, function(index, item){
+          if (index == page){
+              title = item.title;
+              text = item.text;
+              image = item.image;
 
               if (languageNow == "ru" || languageNow == undefined){
                 title = title.ru;
@@ -82,6 +82,7 @@ $(function(){
               }
               
             $item = $('<h2 class="inner-part__title"  data-page="' + page +  '">' + title + '</h2><div>'+ text + '</div>' ).appendTo(".inner-part-content");
+            $item_image = $('<image src=images/inner-illustrations-' + image + '.png></img>').appendTo( ".inner-part__image" );
           }
         });
       });
