@@ -1,3 +1,4 @@
+
 function log(n){
   console.log(n);
 }
@@ -35,5 +36,7 @@ $(function(){
         $e.html( translate );
       });
   });
+
+  // $('body').data('app-data', { start_page: 'save_and_blabla' });
 
 });

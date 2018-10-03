@@ -2,8 +2,8 @@
   var data;
   var theTemplateScript;
   var theTemplate;
-  var change;
-  var event;
+  var context;
+  var theCompiledHtml;
 
 //   var $item_image;
 
@@ -45,22 +45,40 @@
 
 
 $(function () {
+
+  var lang = 'ru';
+
   $(window).on( "main:ready", function( e, _data ) {
     data = _data;
     theTemplateScript = $("#entry-template").html();
     theTemplate = Handlebars.compile(theTemplateScript);
+    context = data.content.save_and_multiply;
+    theCompiledHtml = theTemplate( { image: context.image, title: context.title[lang], text:context.text[lang] } );
+    $('.inner-part').html(theCompiledHtml);
 
-    $(window).on("content:change", function(){
-      $.each(data.content_2, function(index, item){
-        if (index == pageNow){
-          var context = item;
-          var theCompiledHtml = theTemplate(context);
-          $('.inner-part').html(theCompiledHtml);
-        }
-      });
-    })
-
-    $(window).trigger( "content:change");
+    $(window).on( "language:changed", function(e, language_name){
+      lang = language_name;
+      theCompiledHtml = theTemplate( { image: context.image, title: context.title[lang], text:context.text[lang] } );
+      $('.inner-part').html(theCompiledHtml);
+    });
 
   });
+
+  $(window).on("content:change", function( e, pageNow ){
+
+    $('.inner-part').fadeOut( "fast", function() {
+
+      context = data.content[pageNow];
+
+      theCompiledHtml = theTemplate( { image: context.image, title: context.title[lang], text:context.text[lang] } );
+
+      $('.inner-part')
+        .html(theCompiledHtml)
+        .fadeIn( "slow" )
+      ;
+
+    });
+
+  });
+
 });

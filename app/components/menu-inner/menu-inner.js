@@ -1,9 +1,14 @@
-var page = "save_and_multiply";
-var pageNow = "save_and_multiply";
-var languageNow;
+
+
 
 $(function(){
-  
+
+  var page = "save_and_multiply";
+  var pageNow = "save_and_multiply";
+  // var pageNow = $('body').data('app-data');
+
+  var languageNow;
+
   var $element = $(".menu-inner");
   var data;
 
@@ -93,12 +98,12 @@ $(function(){
     function menu_click(elem){
       $(elem).on('click', function(){
         $(elem).removeClass("menu-inner__item_choosed");
-        $this = this;
-        $($this).addClass("menu-inner__item_choosed");
-        page = $($this).data("page");
+        var $this = $(this);
+        $this.addClass("menu-inner__item_choosed");
+        page = $this.data("page");
         pageNow = page;
 
-        $(window).trigger( "content:change");
+        $(window).trigger( "content:change", pageNow );
 
       });
 

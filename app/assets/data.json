@@ -94,8 +94,9 @@
     
   },
 
-  "content": {
+  "content": {  
       "save_and_multiply": {
+        "image": "1",
         "title": {
           "ru": "Сохранить и приумножить",
           "en": "Save and multiply",
