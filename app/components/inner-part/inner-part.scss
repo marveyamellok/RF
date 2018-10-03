@@ -116,8 +116,7 @@
 	    	max-width: 110%;
 	    }
 	}
-}	
-
+}
 
 .inner-part__link{
 	color: $sdark;
@@ -128,12 +127,35 @@
 		display: inline-block;
 		clear: both;
 		background: url("../images/arrow.svg") no-repeat center;
-	    width: 12px;
-	    height: 2px;
-	    vertical-align: middle;
-	    margin-left: 5px;
-        background-size: contain;
+	  width: 12px;
+	  height: 2px;
+	  vertical-align: middle;
+	  margin-left: 5px;
+    background-size: contain;
 	}
+}	
+
+.inner-part__text{
+	padding: 0 0 0 35px;
+	position: relative;
+
+	&:after,
+	&:before{
+		display: none;
+	}
+}
+
+
+.inner-part__line{
+  position: absolute;
+  left: -10px;
+  margin-top: 11px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 1px;
+	padding: 0;
+	background-color: #ddd9db;
 }
 
 // для миксинов!!! //

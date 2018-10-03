@@ -2,10 +2,10 @@ mixin inner-part(content, params)
   .inner-part
   script(id="entry-template" type="text/x-handlebars-template")
       .inner-part__image
-        //- img(src="images/inner-illustrations-5.png")
+        img(src="images/inner-illustrations-{{image}}.png")
       .inner-part-content
-        h2.inner-part__title {{title}}
-        .inner-part-column {{text}}
+        h2.inner-part__title {{{title}}}
+        .inner-part-column {{{text}}}
 
 mixin inner-part_old(content, params)
   .inner-part

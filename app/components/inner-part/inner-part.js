@@ -1,7 +1,10 @@
 
   var data;
   var theTemplateScript;
-  var theTemplate
+  var theTemplate;
+  var change;
+  var event;
+
 //   var $item_image;
 
 //   $(window).on( "main:ready", function( e, _data ) {
@@ -42,14 +45,22 @@
 
 
 $(function () {
-
   $(window).on( "main:ready", function( e, _data ) {
     data = _data;
     theTemplateScript = $("#entry-template").html();
     theTemplate = Handlebars.compile(theTemplateScript);
-    var context = data.content_2.save_and_multiply
-    var theCompiledHtml = theTemplate(context);
-    $('.inner-part').html(theCompiledHtml);
+
+    $(window).on("content:change", function(){
+      $.each(data.content_2, function(index, item){
+        if (index == pageNow){
+          var context = item;
+          var theCompiledHtml = theTemplate(context);
+          $('.inner-part').html(theCompiledHtml);
+        }
+      });
+    })
+
+    $(window).trigger( "content:change");
 
   });
 });

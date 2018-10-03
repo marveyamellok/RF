@@ -96,7 +96,6 @@
 
   "content": {
       "save_and_multiply": {
-        "image":"1",
         "title": {
           "ru": "Сохранить и приумножить",
           "en": "Save and multiply",
@@ -104,24 +103,24 @@
         },
         "text": {
           "ru":[
-            "Обслуживание в московском офисе Friedrich Wilhelm Raiffeisen сочетает в себе преимущества индивидуального клиентского сервиса в Москве с инвестиционными решениями, разработанными в центральном офисе Группы Райффайзен в Вене.",
-            "Каждый клиент российского офиса Friedrich Wilhelm Raiffeisen получает персонального менеджера в Москве, который осуществляет открытие и обслуживание инвестиционных счетов в Австрии, а также обеспечивает доступ к международному рынку ценных бумаг через платформы в России и за рубежом.",
-            "Специалисты Friedrich Wilhelm Raiffeisen в Австрии разрабатывают индивидуальные стратегии доверительного управления активами и осуществляют формирование индивидуального портфеля, отвечающего инвестиционным потребностям клиента.",
-            "Friedrich Wilhelm Raiffeisen оказывает брокерские, консультационные и аналитические услуги, предоставляет гибкие депозитные предложения и обслуживает счета в 11 валютах.",
+            "Обслуживание в московском офисе Friedrich Wilhelm Raiffeisen сочетает в себе преимущества индивидуального клиентского сервиса в Москве с инвестиционными решениями, разработанными в центральном офисе Группы Райффайзен в Вене.  <br>",
+            "Каждый клиент российского офиса Friedrich Wilhelm Raiffeisen получает персонального менеджера в Москве, который осуществляет открытие и обслуживание инвестиционных счетов в Австрии, а также обеспечивает доступ к международному рынку ценных бумаг через платформы в России и за рубежом.  <br>",
+            "Специалисты Friedrich Wilhelm Raiffeisen в Австрии разрабатывают индивидуальные стратегии доверительного управления активами и осуществляют формирование индивидуального портфеля, отвечающего инвестиционным потребностям клиента.  <br>",
+            "Friedrich Wilhelm Raiffeisen оказывает брокерские, консультационные и аналитические услуги, предоставляет гибкие депозитные предложения и обслуживает счета в 11 валютах.  <br>",
             "Узнать об инвестиционных решениях Friedrich Wilhelm Raiffeisen <a href='#' class='inner-part__link'> в Вене</a>"
           ],
           "en":[
-            "The service in the Moscow office of Friedrich Wilhelm Raiffeisen combines the advantages of an individual customer service in Moscow with investment solutions developed in the central office of the Raiffeisen Group in Vienna.",
-            "Every customer of the Russian office of Friedrich Wilhelm Raiffeisen receives a personal manager in Moscow who opens and maintains investment accounts in Austria and also provides access to the international securities market through platforms in Russia and abroad.",
-            "Specialists Friedrich Wilhelm Raiffeisen in Austria develop individual strategies for asset management and create an individual portfolio that meets the investment needs of the client.",
-            "Friedrich Wilhelm Raiffeisen provides brokerage, consulting and analytical services, offers flexible deposit offers and services accounts in 11 currencies.",
+            "The service in the Moscow office of Friedrich Wilhelm Raiffeisen combines the advantages of an individual customer service in Moscow with investment solutions developed in the central office of the Raiffeisen Group in Vienna.  <br>",
+            "Every customer of the Russian office of Friedrich Wilhelm Raiffeisen receives a personal manager in Moscow who opens and maintains investment accounts in Austria and also provides access to the international securities market through platforms in Russia and abroad.  <br>",
+            "Specialists Friedrich Wilhelm Raiffeisen in Austria develop individual strategies for asset management and create an individual portfolio that meets the investment needs of the client.  <br>",
+            "Friedrich Wilhelm Raiffeisen provides brokerage, consulting and analytical services, offers flexible deposit offers and services accounts in 11 currencies.  <br>",
             "Learn about investment decisions by Friedrich Wilhelm Raiffeisen <a href='#' class='inner-part__link'> in Vienna </a>"
           ],
           "de":[
-            "Der Service im Moskauer Büro von Friedrich Wilhelm Raiffeisen verbindet die Vorteile eines individuellen Kundenservice in Moskau mit Investitionslösungen, die in der Zentrale der Raiffeisen-Gruppe in Wien entwickelt wurden.",
-            "Jeder Kunde des russischen Büros von Friedrich Wilhelm Raiffeisen erhält in Moskau einen persönlichen Manager, der Anlagekonten in Österreich eröffnet und unterhält und über Plattformen in Russland und im Ausland Zugang zum internationalen Wertpapiermarkt bietet.",
-            "Die Spezialisten von Friedrich Wilhelm Raiffeisen in Österreich entwickeln individuelle Strategien für das Asset Management und schaffen ein individuelles Portfolio, das den Anlagebedürfnissen des Kunden gerecht wird.",
-            "Friedrich Wilhelm Raiffeisen bietet Brokerage-, Beratungs- und Analysedienstleistungen, bietet flexible Depotangebote und Dienstleistungskonten in 11 Währungen an.",
+            "Der Service im Moskauer Büro von Friedrich Wilhelm Raiffeisen verbindet die Vorteile eines individuellen Kundenservice in Moskau mit Investitionslösungen, die in der Zentrale der Raiffeisen-Gruppe in Wien entwickelt wurden.  <br>",
+            "Jeder Kunde des russischen Büros von Friedrich Wilhelm Raiffeisen erhält in Moskau einen persönlichen Manager, der Anlagekonten in Österreich eröffnet und unterhält und über Plattformen in Russland und im Ausland Zugang zum internationalen Wertpapiermarkt bietet.  <br>",
+            "Die Spezialisten von Friedrich Wilhelm Raiffeisen in Österreich entwickeln individuelle Strategien für das Asset Management und schaffen ein individuelles Portfolio, das den Anlagebedürfnissen des Kunden gerecht wird.  <br>",
+            "Friedrich Wilhelm Raiffeisen bietet Brokerage-, Beratungs- und Analysedienstleistungen, bietet flexible Depotangebote und Dienstleistungskonten in 11 Währungen an.  <br>",
             "Erfahren Sie mehr über Investitionsentscheidungen von Friedrich Wilhelm Raiffeisen <a href='#' class='inner-part__link'> in Wien </a>"
           ]
         }
@@ -135,24 +134,24 @@
           },
         "text":{
           "ru":[
-            "Московский офис Friedrich Wilhelm Raiffeisen предлагает",
-            "Широкий выбор кредитных продуктов в России — кредит на покупку жилой недвижимости; ",
-            "кредит под залог недвижимости — как жилой, так и коммерческой; потребительный беззалоговый кредит; ",
-            "кредит, обеспеченный залогом собственного векселя Банка",
+            "Московский офис Friedrich Wilhelm Raiffeisen предлагает <br>",
+            "Широкий выбор кредитных продуктов в России — кредит на покупку жилой недвижимости;  <br>",
+            "кредит под залог недвижимости — как жилой, так и коммерческой; потребительный беззалоговый кредит;  <br>",
+            "кредит, обеспеченный залогом собственного векселя Банка <br>",
             "Выпуск банковских гарантий с целью обеспечения обязательств перед третьими сторонами — гарантия платежа, гарантия возврата аванса и другие виды гарантий."              
           ],
           "en":[
-             "Moscow office Friedrich Wilhelm Raiffeisen offers",
-             "A wide range of credit products in Russia - a loan for the purchase of residential real estate;",
-             "loan secured by real estate - both residential and commercial, consumer unsecured loan;",
-             "a loan secured by a pledge of the Bank's own promissory note",
+             "Moscow office Friedrich Wilhelm Raiffeisen offers <br>",
+             "A wide range of credit products in Russia - a loan for the purchase of residential real estate; <br>",
+             "loan secured by real estate - both residential and commercial, consumer unsecured loan; <br>",
+             "a loan secured by a pledge of the Bank's own promissory note <br>",
              "Issue of bank guarantees for the purpose of securing obligations to third parties - guarantee of payment, guarantee of advance payment and other types of guarantees."
           ],
           "de":[
-             "Moskau Büro Friedrich Wilhelm Raiffeisen bietet",
-             "Eine breite Palette von Kreditprodukten in Russland - ein Darlehen für den Kauf von Wohnimmobilien;",
-             "Darlehen durch Immobilien besichert - sowohl Wohn-und Handels-, Verbraucher ungesicherte Darlehen;",
-             "ein Darlehen, das durch Verpfändung des eigenen Schuldscheins der Bank gesichert ist",
+             "Moskau Büro Friedrich Wilhelm Raiffeisen bietet  <br>",
+             "Eine breite Palette von Kreditprodukten in Russland - ein Darlehen für den Kauf von Wohnimmobilien;  <br>",
+             "Darlehen durch Immobilien besichert - sowohl Wohn-und Handels-, Verbraucher ungesicherte Darlehen;  <br>",
+             "ein Darlehen, das durch Verpfändung des eigenen Schuldscheins der Bank gesichert ist  <br>",
              "Ausgabe von Bankbürgschaften zur Sicherung von Verpflichtungen gegenüber Dritten - Zahlungsgarantie, Garantie für Vorauszahlung und andere Arten von Garantien."
           ]
         }
@@ -166,30 +165,30 @@
           },
         "text": {
           "ru":[
-            "Сделки на рынках акционерного и долгового капитала",
-            "- поиск инвесторов",
-            "- поиск объектов / бизнеса для приобретения",
-            "- оценка стоимости бизнеса",
-            "- комплексное сопровождение и структурирование сделок",
-            " - привлечение инвестиций на рынке капитала — IPO, SPO, private placements",
-            "Налоговое планирование и юридическое сопровождение корпоративных и личных активов в России и за рубежом"         
+            "Сделки на рынках акционерного и долгового капитала <br>",
+            "- поиск инвесторов <br>",
+            "- поиск объектов / бизнеса для приобретения <br>",
+            "- оценка стоимости бизнеса <br>",
+            "- комплексное сопровождение и структурирование сделок <br>",
+            " - привлечение инвестиций на рынке капитала — IPO, SPO, private placements <br>",
+            "Налоговое планирование и юридическое сопровождение корпоративных и личных активов в России и за рубежом <br>"         
             ],
           "en":[
-            "Transactions in the markets of equity and debt capital",
-            "Investors search",
-            "- search for objects / businesses for the acquisition",
-            "- valuation of business",
-            "- complex support and structuring of transactions",
-            "- attraction of investments in the capital market - IPO, SPO, private placements",
+            "Transactions in the markets of equity and debt capital <br>",
+            "Investors search <br>",
+            "- search for objects / businesses for the acquisition <br>",
+            "- valuation of business <br>",
+            "- complex support and structuring of transactions <br> <br>",
+            "- attraction of investments in the capital market - IPO, SPO, private placements <br>",
             "Tax planning and legal support of corporate and personal assets in Russia and abroad"
           ],
           "de":[
-            "Transaktionen auf den Märkten für Eigen- und Fremdkapital",
-            "Investoren suchen",
-            "- Suche nach Objekten / Unternehmen zum Erwerb",
-            "- Bewertung des Geschäfts",
-            "- komplexe Unterstützung und Strukturierung von Transaktionen",
-            "- Attraktivität von Investitionen am Kapitalmarkt - IPO, SPO, Privatplatzierungen",
+            "Transaktionen auf den Märkten für Eigen- und Fremdkapital <br>",
+            "Investoren suchen <br>",
+            "- Suche nach Objekten / Unternehmen zum Erwerb <br>",
+            "- Bewertung des Geschäfts <br>",
+            "- komplexe Unterstützung und Strukturierung von Transaktionen <br>",
+            "- Attraktivität von Investitionen am Kapitalmarkt - IPO, SPO, Privatplatzierungen <br>",
             "Steuerplanung und rechtliche Unterstützung von Firmen- und Privatvermögen in Russland und im Ausland"
           ]
         }
@@ -204,24 +203,24 @@
         "text":{
           "ru":[
             "- Дистанционное обслуживание счетов",
-            "- Специальный курс конвертации валют, в том числе в режиме онлайн в системах R-Online, R-Dealer",
-            "- Широкий выбор премиальных дебетовых и кредитных карт Visa и МasterCard",
-            "- Расчеты через аккредитивы",
-            "- Счета в одиннадцати валютах: рублях, долларах США, евро, швейцарских франках, фунтах стерлингов, японских йенах, норвежских кронах, шведских кронах, австралийских долларах, канадских долларах, китайских юанях"           
+            "- Специальный курс конвертации валют, в том числе в режиме онлайн в системах R-Online, R-Dealer <br>",
+            "- Широкий выбор премиальных дебетовых и кредитных карт Visa и МasterCard <br>",
+            "- Расчеты через аккредитивы <br>",
+            "- Счета в одиннадцати валютах: рублях, долларах США, евро, швейцарских франках, фунтах стерлингов, японских йенах, норвежских кронах, шведских кронах, австралийских долларах, канадских долларах, китайских юанях <br>"           
           ],
           "en":[
             "- Remote maintenance of accounts",
-            "- A special rate of currency conversion, including online in R-Online, R-Dealer systems",
-            "- A wide selection of premium debit and credit cards Visa and MasterCard",
-            "- Settlements through letters of credit",
-            "- Accounts in eleven currencies: rubles, US dollars, euros, Swiss francs, pounds sterling, Japanese yen, Norwegian krone, Swedish krona, Australian dollars, Canadian dollars, Chinese yuan"
+            "- A special rate of currency conversion, including online in R-Online, R-Dealer systems <br>",
+            "- A wide selection of premium debit and credit cards Visa and MasterCard <br>",
+            "- Settlements through letters of credit <br>",
+            "- Accounts in eleven currencies: rubles, US dollars, euros, Swiss francs, pounds sterling, Japanese yen, Norwegian krone, Swedish krona, Australian dollars, Canadian dollars, Chinese yuan <br>"
           ],
           "de":[
             "- Fernwartung von Konten",
-            "- Ein spezieller Kurs der Währungsumrechnung, einschließlich online in R-Online, R-Dealer-Systeme",
-            "- Eine große Auswahl an Premium-Debit- und Kreditkarten Visa und MasterCard",
-            "- Abrechnungen durch Akkreditive",
-            "- Konten in elf Währungen: Rubel, US-Dollar, Euro, Schweizer Franken, Britisches Pfund, Japanischer Yen, Norwegische Krone, Schwedische Krone, Australischer Dollar, Kanadischer Dollar, Chinesischer Yuan"
+            "- Ein spezieller Kurs der Währungsumrechnung, einschließlich online in R-Online, R-Dealer-Systeme <br>",
+            "- Eine große Auswahl an Premium-Debit- und Kreditkarten Visa und MasterCard <br>",
+            "- Abrechnungen durch Akkreditive <br>",
+            "- Konten in elf Währungen: Rubel, US-Dollar, Euro, Schweizer Franken, Britisches Pfund, Japanischer Yen, Norwegische Krone, Schwedische Krone, Australischer Dollar, Kanadischer Dollar, Chinesischer Yuan <br>"
           ]
         }
       },
@@ -234,27 +233,23 @@
         },
         "text": {
           "ru":[
-            "- Услуги профессиональных посредников для решения задач по структурированию владения активами и вопросам наследования",
-            "- Налоговое планирование и юридическое сопровождение личных активов в России и за рубежом", 
-            "- Комплексные решения по приобретению и финансированию крупных активов: коммерческая и жилая недвижимость в России и за рубежом, самолеты, яхты", 
-            "- Финансовая защита благосостояния семьи — индивидуальные программы страхования жизни", 
-            "- Поддержка в решении индивидуальных запросов вашей семьи", 
-            "- Участие в наиболее ярких событиях культурной жизни Москвы"
+            "- Услуги профессиональных посредников для решения задач по структурированию владения активами и вопросам наследования <br>",
+            "- Налоговое планирование и юридическое сопровождение личных активов в России и за рубежом <br> - Комплексные решения по приобретению и финансированию крупных активов: коммерческая и жилая недвижимость в России и за рубежом, самолеты, яхты <br> - Финансовая защита благосостояния семьи — индивидуальные программы страхования жизни <br> - Поддержка в решении индивидуальных запросов вашей семьи <br> - Участие в наиболее ярких событиях культурной жизни Москвы"
           ],
           "en":[
-            "- Professional intermediary services for solving problems on structuring asset ownership and inheritance issues",
-            "- Tax planning and legal support of personal assets in Russia and abroad",
-            "- Comprehensive solutions for the acquisition and financing of large assets: commercial and residential real estate in Russia and abroad, airplanes, yachts",
-            "- Financial protection of family welfare - individual life insurance programs",
-            "- Support in solving individual requests of your family",
+            "- Professional intermediary services for solving problems on structuring asset ownership and inheritance issues <br>",
+            "- Tax planning and legal support of personal assets in Russia and abroad <br>",
+            "- Comprehensive solutions for the acquisition and financing of large assets: commercial and residential real estate in Russia and abroad, airplanes, yachts <br>",
+            "- Financial protection of family welfare - individual life insurance programs <br>",
+            "- Support in solving individual requests of your family <br>",
             "- Participation in the most striking events of the cultural life of Moscow"
           ],
           "de":[
-            "- Professionelle Vermittlerdienste zur Lösung von Problemen zur Strukturierung von Vermögens- und Erbschaftsfragen",
-            "- Steuerplanung und rechtliche Unterstützung von persönlichen Vermögenswerten in Russland und im Ausland",
-            "- Umfassende Lösungen für den Erwerb und die Finanzierung von großen Vermögenswerten: Handels- und Wohnimmobilien in Russland und im Ausland, Flugzeuge, Yachten",
-            "- Finanzieller Schutz der Familienfürsorge - individuelle Lebensversicherungsprogramme",
-            "- Unterstützung bei der Lösung individueller Wünsche Ihrer Familie",
+            "- Professionelle Vermittlerdienste zur Lösung von Problemen zur Strukturierung von Vermögens- und Erbschaftsfragen <br>",
+            "- Steuerplanung und rechtliche Unterstützung von persönlichen Vermögenswerten in Russland und im Ausland <br>",
+            "- Umfassende Lösungen für den Erwerb und die Finanzierung von großen Vermögenswerten: Handels- und Wohnimmobilien in Russland und im Ausland, Flugzeuge, Yachten <br>",
+            "- Finanzieller Schutz der Familienfürsorge - individuelle Lebensversicherungsprogramme <br>",
+            "- Unterstützung bei der Lösung individueller Wünsche Ihrer Familie <br>",
             "- Teilnahme an den auffälligsten Ereignissen des kulturellen Lebens von Moskau"
           ]
         }
@@ -268,15 +263,15 @@
         },
         "text": {
           "ru":[
-            "Friedrich Wilhelm Raiffeisen — подразделение по работе с состоятельными клиентами АО «Райффайзенбанк», предоставляющее финансовые решения для владельцев крупного частного капитала и их семей в России и за рубежом. ",
+            "Friedrich Wilhelm Raiffeisen — подразделение по работе с состоятельными клиентами АО «Райффайзенбанк», предоставляющее финансовые решения для владельцев крупного частного капитала и их семей в России и за рубежом.  <br>",
             "Наше главное преимущество — успешное развитие группы Райффайзен в России с 1996 года и более чем 130-летняя история банка в Европе."
           ],
           "en":[
-            "Friedrich Wilhelm Raiffeisen is a wealthy client division of Raiffeisenbank, which provides financial solutions for owners of large private capital and their families in Russia and abroad.",
+            "Friedrich Wilhelm Raiffeisen is a wealthy client division of Raiffeisenbank, which provides financial solutions for owners of large private capital and their families in Russia and abroad. <br>",
             "Our main advantage is the successful development of the Raiffeisen Group in Russia since 1996 and the more than 130-year history of the bank in Europe."
           ],
           "de":[
-            "Friedrich Wilhelm Raiffeisen ist eine vermögende Kundensparte der Raiffeisenbank, die Finanzierungen für Eigentümer von privatem Großkapital und deren Familien in Russland und im Ausland bereitstellt.",
+            "Friedrich Wilhelm Raiffeisen ist eine vermögende Kundensparte der Raiffeisenbank, die Finanzierungen für Eigentümer von privatem Großkapital und deren Familien in Russland und im Ausland bereitstellt. <br>",
             "Unser Hauptvorteil ist die erfolgreiche Entwicklung der Raiffeisen-Gruppe in Russland seit 1996 und die mehr als 130-jährige Geschichte der Bank in Europa."
           ]
         }
@@ -306,66 +301,42 @@
         "image":"1",
         "title":"Сохранить и приумножить",
         "text":[
-            "Обслуживание в московском офисе Friedrich Wilhelm Raiffeisen сочетает в себе преимущества индивидуального клиентского сервиса в Москве с инвестиционными решениями, разработанными в центральном офисе Группы Райффайзен в Вене.",
-            "Каждый клиент российского офиса Friedrich Wilhelm Raiffeisen получает персонального менеджера в Москве, который осуществляет открытие и обслуживание инвестиционных счетов в Австрии, а также обеспечивает доступ к международному рынку ценных бумаг через платформы в России и за рубежом.",
-            "Специалисты Friedrich Wilhelm Raiffeisen в Австрии разрабатывают индивидуальные стратегии доверительного управления активами и осуществляют формирование индивидуального портфеля, отвечающего инвестиционным потребностям клиента.",
-            "Friedrich Wilhelm Raiffeisen оказывает брокерские, консультационные и аналитические услуги, предоставляет гибкие депозитные предложения и обслуживает счета в 11 валютах.",
-            "Узнать об инвестиционных решениях Friedrich Wilhelm Raiffeisen <a href='#' class='inner-part__link'> в Вене</a>"
+            "<p>Обслуживание в московском офисе Friedrich Wilhelm Raiffeisen сочетает в себе преимущества индивидуального клиентского сервиса в Москве с инвестиционными решениями, разработанными в центральном офисе Группы Райффайзен в Вене. </p><p> Каждый клиент российского офиса Friedrich Wilhelm Raiffeisen получает персонального менеджера в Москве, который осуществляет открытие и обслуживание инвестиционных счетов в Австрии, а также обеспечивает доступ к международному рынку ценных бумаг через платформы в России и за рубежом. </p><p> Специалисты Friedrich Wilhelm Raiffeisen в Австрии разрабатывают индивидуальные стратегии доверительного управления активами и осуществляют формирование индивидуального портфеля, отвечающего инвестиционным потребностям клиента. </p><p> Friedrich Wilhelm Raiffeisen оказывает брокерские, консультационные и аналитические услуги, предоставляет гибкие депозитные предложения и обслуживает счета в 11 валютах. </p><p> Узнать об инвестиционных решениях Friedrich Wilhelm Raiffeisen <a href='#' class='inner-part__link'> в Вене</a></p>"
           ]
       },
       "get_founding": {
         "image":"2",
         "title":"Получить финансирование",
         "text":[
-            "Московский офис Friedrich Wilhelm Raiffeisen предлагает",
-            "Широкий выбор кредитных продуктов в России — кредит на покупку жилой недвижимости; ",
-            "кредит под залог недвижимости — как жилой, так и коммерческой; потребительный беззалоговый кредит; ",
-            "кредит, обеспеченный залогом собственного векселя Банка",
-            "Выпуск банковских гарантий с целью обеспечения обязательств перед третьими сторонами — гарантия платежа, гарантия возврата аванса и другие виды гарантий."              
+            "<p>Московский офис Friedrich Wilhelm Raiffeisen предлагает  </p><p> Широкий выбор кредитных продуктов в России — кредит на покупку жилой недвижимости;   </p><p> кредит под залог недвижимости — как жилой, так и коммерческой; потребительный беззалоговый кредит;   </p><p> кредит, обеспеченный залогом собственного векселя Банка  </p><p> Выпуск банковских гарантий с целью обеспечения обязательств перед третьими сторонами — гарантия платежа, гарантия возврата аванса и другие виды гарантий.</p>"              
           ]
       },
       "business_solutions": {
         "image":"3",
         "title": "Решение для вашего бизнеса",
         "text":[
-            "Сделки на рынках акционерного и долгового капитала",
-            "- поиск инвесторов",
-            "- поиск объектов / бизнеса для приобретения",
-            "- оценка стоимости бизнеса",
-            "- комплексное сопровождение и структурирование сделок",
-            " - привлечение инвестиций на рынке капитала — IPO, SPO, private placements",
-            "Налоговое планирование и юридическое сопровождение корпоративных и личных активов в России и за рубежом"         
+            "<p>Сделки на рынках акционерного и долгового капитала <div class='inner-part__text'><span class='inner-part__line'></span> поиск инвесторов  </div><div class='inner-part__text'> <span class='inner-part__line'></span> поиск объектов / бизнеса для приобретения  </div><div class='inner-part__text'> <span class='inner-part__line'></span> оценка стоимости бизнеса  </div><div class='inner-part__text'> <span class='inner-part__line'></span> комплексное сопровождение и структурирование сделок  </div><div class='inner-part__text'> <span class='inner-part__line'></span> привлечение инвестиций на рынке капитала — IPO, SPO, private placements  </div></p><p> Налоговое планирование и юридическое сопровождение корпоративных и личных активов в России и за рубежом</p>"         
             ]
       },
       "banking_services": {
         "image":"4",
         "title":"Банковское обслуживание",
         "text":[
-            "- Дистанционное обслуживание счетов",
-            "- Специальный курс конвертации валют, в том числе в режиме онлайн в системах R-Online, R-Dealer",
-            "- Широкий выбор премиальных дебетовых и кредитных карт Visa и МasterCard",
-            "- Расчеты через аккредитивы",
-            "- Счета в одиннадцати валютах: рублях, долларах США, евро, швейцарских франках, фунтах стерлингов, японских йенах, норвежских кронах, шведских кронах, австралийских долларах, канадских долларах, китайских юанях"           
+          "<div class='inner-part__text'><span class='inner-part__line'></span> Дистанционное обслуживание счетов  </div><div class='inner-part__text'> <span class='inner-part__line'></span> Специальный курс конвертации валют, в том числе в режиме онлайн в системах R-Online, R-Dealer  </div><div class='inner-part__text'> <span class='inner-part__line'></span>  Широкий выбор премиальных дебетовых и кредитных карт Visa и МasterCard  </div><div class='inner-part__text'> <span class='inner-part__line'></span>  Расчеты через аккредитивы  </div><div class='inner-part__text'> <span class='inner-part__line'></span>  Счета в одиннадцати валютах: рублях, долларах США, евро, швейцарских франках, фунтах стерлингов, японских йенах, норвежских кронах, шведских кронах, австралийских долларах, канадских долларах, китайских юанях</div></p>"           
           ]
       },
       "family_solutions": {
         "image":"5",
         "title": "Решения для вашей семьи и консалтинг",
         "text": [
-            "- Услуги профессиональных посредников для решения задач по структурированию владения активами и вопросам наследования",
-            "- Налоговое планирование и юридическое сопровождение личных активов в России и за рубежом", 
-            "- Комплексные решения по приобретению и финансированию крупных активов: коммерческая и жилая недвижимость в России и за рубежом, самолеты, яхты", 
-            "- Финансовая защита благосостояния семьи — индивидуальные программы страхования жизни", 
-            "- Поддержка в решении индивидуальных запросов вашей семьи", 
-            "- Участие в наиболее ярких событиях культурной жизни Москвы"
+          "<div class='inner-part__text'><span class='inner-part__line'></span>  Услуги профессиональных посредников для решения задач по структурированию владения активами и вопросам наследования </div><div class='inner-part__text'> <span class='inner-part__line'></span>  Налоговое планирование и юридическое сопровождение личных активов в России и за рубежом </div><div class='inner-part__text'> <span class='inner-part__line'></span>  Комплексные решения по приобретению и финансированию крупных активов: коммерческая и жилая недвижимость в России и за рубежом, самолеты, яхты </div><div class='inner-part__text'> <span class='inner-part__line'></span>  Финансовая защита благосостояния семьи — индивидуальные программы страхования жизни </div><div class='inner-part__text'> <span class='inner-part__line'></span>  Поддержка в решении индивидуальных запросов вашей семьи </div><div class='inner-part__text'> <span class='inner-part__line'></span>  Участие в наиболее ярких событиях культурной жизни Москвы</div></p>"
           ]
       },
       "about": {
         "image":"2",
         "title":"О нас",
         "text":[
-            "Friedrich Wilhelm Raiffeisen — подразделение по работе с состоятельными клиентами АО «Райффайзенбанк», предоставляющее финансовые решения для владельцев крупного частного капитала и их семей в России и за рубежом. ",
-            "Наше главное преимущество — успешное развитие группы Райффайзен в России с 1996 года и более чем 130-летняя история банка в Европе."
+            "<p>Friedrich Wilhelm Raiffeisen — подразделение по работе с состоятельными клиентами АО «Райффайзенбанк», предоставляющее финансовые решения для владельцев крупного частного капитала и их семей в России и за рубежом.  <p></p> Наше главное преимущество — успешное развитие группы Райффайзен в России с 1996 года и более чем 130 - летняя история банка в Европе.</p>"
           ]
       },
       "contacts": {

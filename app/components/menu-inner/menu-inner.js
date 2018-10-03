@@ -27,6 +27,7 @@ $(function(){
       addContent(content, item, page);
 
       $menu_item = $(".menu-inner__item", $element );
+      $($menu_item[0]).addClass("menu-inner__item_choosed");
 
     });
 
@@ -49,7 +50,7 @@ $(function(){
         $menu_item.push($item[0]);
       });
 
-      // menu_click($menu_item);
+      menu_click($menu_item);
     });
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -91,19 +92,13 @@ $(function(){
 
     function menu_click(elem){
       $(elem).on('click', function(){
+        $(elem).removeClass("menu-inner__item_choosed");
         $this = this;
+        $($this).addClass("menu-inner__item_choosed");
         page = $($this).data("page");
         pageNow = page;
 
-        $.each(data.content_2, function(index, item){
-
-            if (index == page){
-              var context = item;
-              var theCompiledHtml = theTemplate(context);
-              $('.inner-part').html(theCompiledHtml);
-            }
-        });
-
+        $(window).trigger( "content:change");
 
       });
 
