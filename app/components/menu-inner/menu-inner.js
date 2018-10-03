@@ -49,43 +49,64 @@ $(function(){
         $menu_item.push($item[0]);
       });
 
-      menu_click($menu_item);
+      // menu_click($menu_item);
     });
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     ////////////////////////////////////функуция для заполнения страницы по клику на пункте меню////////////////////////////////////
 
+    // function menu_click(elem){
+    //   $(elem).on('click', function(){
+    //     $this = this;
+    //     page = $($this).data("page");
+    //     pageNow = page;
+    //     $(".inner-part-content").html("");
+    //     $(".inner-part__image").html("");
+
+    //     $.each(data.content, function(index, item){
+    //       if (index == page){
+    //           title = item.title;
+    //           text = item.text;
+    //           image = item.image;
+
+    //           if (languageNow == "ru" || languageNow == undefined){
+    //             title = title.ru;
+    //             text = text.ru;
+    //           } else if (languageNow == "en"){
+    //             title = title.en;
+    //             text = text.en;
+    //           } else {
+    //             title = title.de;
+    //             text = text.de;
+    //           }
+              
+    //         $item = $('<h2 class="inner-part__title"  data-page="' + page +  '">' + title + '</h2><div>'+ text + '</div>' ).appendTo(".inner-part-content");
+    //         $item_image = $('<image src=images/inner-illustrations-' + image + '.png></img>').appendTo( ".inner-part__image" );
+    //       }
+    //     });
+    //   });
+    // }
+
+
     function menu_click(elem){
       $(elem).on('click', function(){
         $this = this;
         page = $($this).data("page");
         pageNow = page;
-        $(".inner-part-content").html("");
-        $(".inner-part__image").html("");
 
-        $.each(data.content, function(index, item){
-          if (index == page){
-              title = item.title;
-              text = item.text;
-              image = item.image;
+        $.each(data.content_2, function(index, item){
 
-              if (languageNow == "ru" || languageNow == undefined){
-                title = title.ru;
-                text = text.ru;
-              } else if (languageNow == "en"){
-                title = title.en;
-                text = text.en;
-              } else {
-                title = title.de;
-                text = text.de;
-              }
-              
-            $item = $('<h2 class="inner-part__title"  data-page="' + page +  '">' + title + '</h2><div>'+ text + '</div>' ).appendTo(".inner-part-content");
-            $item_image = $('<image src=images/inner-illustrations-' + image + '.png></img>').appendTo( ".inner-part__image" );
-          }
+            if (index == page){
+              var context = item;
+              var theCompiledHtml = theTemplate(context);
+              $('.inner-part').html(theCompiledHtml);
+            }
         });
+
+
       });
+
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
