@@ -4,6 +4,10 @@
     margin:$MARGIN-PART;
     min-height: 615px;
 
+    // height: 100px;
+    // min-height: 0!important;
+    // overflow: hidden;
+
 	@include PHONE-N {
 	    display: block;
 	    width: 100%;
