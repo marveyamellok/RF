@@ -4,17 +4,23 @@ mixin menu-inner()
       .menu-inner__button-close
       ul.menu-inner__list
         .menu-inner__items
+
         .menu-inner__buttons
-          .button.button_dark
-            a(href="https://online.raiffeisen.ru/").button__text(data-trnslt="ROnline") 
-          .button.button_small
-            a(href="r-dealer.html").button__text(data-trnslt="RDealer")
+          script(id="entry-template_buttons" type="text/x-handlebars-template")
+            .button.button_dark
+              a(href="https://online.raiffeisen.ru/").button__text(data-trnslt="ROnline") {{{ROnline}}}
+            .button.button_small
+              a(href="r-dealer.html").button__text(data-trnslt="RDealer") {{{RDealer}}}
+
       .menu-inner__download
-        .menu-inner__download-button
-          a(href="#").link_button
-            .menu-inner__download-button-img
-            .menu-inner__download-button-text(data-trnslt="footer_fwr")
-        p.menu-inner__footer(data-trnslt="footer_copyright")
+        script(id="entry-template_download" type="text/x-handlebars-template")
+          .menu-inner__download-button
+            a(href="#").link_button
+              .menu-inner__download-button-img
+              .menu-inner__download-button-text(data-trnslt="footer_fwr") {{{footer_copyright}}}
+          p
+            .menu-inner__footer(data-trnslt="footer_copyright") {{{footer_fwr}}}
+            a(href='https://www.raiffeisen.ru' target='_blank' class='menu-inner__footer-link') www.raiffeisen.ru
 
   block
 

@@ -419,6 +419,7 @@ $list-p_desktop: 40px;
 }
 
 .menu-inner__download-button {
+  position: relative;
     display: block;
     width: 100%;
     height: 36px;
@@ -479,6 +480,11 @@ $list-p_desktop: 40px;
 	}
 }
 .menu-inner__download-button-text{
+  left: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 	width: auto;
     height: 22px;
     display: inline-block;

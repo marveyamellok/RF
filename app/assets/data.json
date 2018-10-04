@@ -7,7 +7,7 @@
     "type": "addLinksButton",
 
     "langs":{
-      "default": "en",
+      "default": "de",
       "list_2": [
         {"lang":"ru"},
         {"lang":"en"},
@@ -287,14 +287,14 @@
   },
   "translates": {
     "footer_fwr": { 
-      "ru": "Скачать «Услуги FWR»",
-      "en": "Download «Услуги FWR»",
-      "de": "Shaise «Услуги FWR»"
+      "ru": "Скачать «Услуги FWR» ",
+      "en": "Download «Услуги FWR» ",
+      "de": "Shaise «Услуги FWR» "
     },
     "footer_copyright": { 
-      "ru": "&copy;&nbsp;2009-2017&nbsp;АО &laquo;Райффайзенбанк&raquo; <br><a href='https://www.raiffeisen.ru' target='_blank' class='menu-inner__footer-link'>www.raiffeisen.ru</a>",
-      "en": "&copy;&nbsp;2009-2017&nbsp;АО &laquo;Raiffeisen&raquo; <br><a href='https://www.raiffeisen.ru' target='_blank' class='menu-inner__footer-link'>www.raiffeisen.ru</a>",
-      "de": "&copy;&nbsp;2009-2017&nbsp;АО &laquo;Raiffeisen(D)&raquo; <br><a href='https://www.raiffeisen.ru' target='_blank' class='menu-inner__footer-link'>www.raiffeisen.ru</a>"
+      "ru": "&copy;&nbsp;2009-2017&nbsp;АО &laquo;Райффайзенбанк&raquo; ",
+      "en": "&copy;&nbsp;2009-2017&nbsp;АО &laquo;Raiffeisen&raquo; ",
+      "de": "&copy;&nbsp;2009-2017&nbsp;АО &laquo;Raiffeisen(D)&raquo; "
     },
     "ROnline":{
       "ru": "Райффайзен-Онлайн",

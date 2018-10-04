@@ -13,6 +13,7 @@ $(function(){
     getCurrentLanguage();
     var $menu_items = $(".menu-inner__items", $element );
     var $elements = [];
+    addButtons();
 
 
     data.menu.list.forEach(function(item,index){
@@ -36,7 +37,7 @@ $(function(){
 
       $($menu_item).removeClass("menu-inner__item_choosed");
       $(this).addClass("menu-inner__item_choosed");
-      
+
       page = $(this).data("page");
 
       $(window).trigger( "menu:change_page", page );
@@ -84,6 +85,29 @@ $(function(){
 
       }
 
+    }
+
+
+    //
+    function addButtons(){
+      getCurrentLanguage()
+
+      var context = data.translates;
+
+      var theTemplateScript = $("#entry-template_buttons").html();
+      var theTemplateScriptDownload = $("#entry-template_download").html();
+
+      var theTemplate = Handlebars.compile(theTemplateScript);
+      var theTemplateDownload = Handlebars.compile(theTemplateScriptDownload);
+
+      var theCompiled = theTemplate( { ROnline:context.ROnline[lang], RDealer:context.RDealer[lang] });
+      var Compiled = theTemplateDownload( { footer_fwr:context.footer_fwr[lang], footer_copyright:context.footer_copyright[lang] });
+
+      $('.menu-inner__buttons')
+        .html(theCompiled);
+
+      $('.menu-inner__download')
+        .html(Compiled);
     }
 
     //
