@@ -3,12 +3,12 @@ $(function(){
   var page;
   var $element = $(".menu-inner");
   var data;
+  var $menu_item;
 
   $(window).on( "main:ready", function( e, _data ) {
     
     data = _data;
     var $menu_items = $(".menu-inner__items", $element );
-    var $menu_item;
 
     data.menu.list.forEach(function(item,index){
 
@@ -24,19 +24,19 @@ $(function(){
 
     });
 
-    $(".menu-inner__item").on('click', function(){
-      $(".menu-inner__item").removeClass("menu-inner__item_choosed");
+    $($menu_item).on('click', function(){
+      $($menu_item).removeClass("menu-inner__item_choosed");
       var $this = $(this);
       $this.addClass("menu-inner__item_choosed");
       page = $this.data("page");
+      data.header.current_page = page;
 
       $(window).trigger( "main:page_changed", data);
-
     });
 
-    $(window).on("main:page_changed", function(){
-      changeContent();
-    })
+    // $(window).on("main:page_changed", function(){
+    //   changeContent();
+    // })
 
     function addContent(content, item, page){
       if( item.type == 'separator' ){
@@ -46,21 +46,22 @@ $(function(){
       }
     }
 
-    function changeContent(){
-      var lang = data.header.current_language;
-      var content = [];
+    // function changeContent(){
+    //   var lang = data.header.current_language;
+    //   var content = [];
 
-      data.menu.list.forEach(function(item, index){
-        if (item.text){
-          var elem = item.text[lang]
-          content.push(elem)
-        }
-      })
+    //   data.menu.list.forEach(function(item, index){
+    //     if (item.text){
+    //       var elem = item.text[lang]
+    //       content.push(elem)
+    //     }
+    //   })
 
-      $.each($(".menu-inner__item-link"), function(index, item ){
-        $(item).html(content[index])
-      });
-    }
+    //   $.each($(".menu-inner__item-link"), function(index, item ){
+    //     $(item).html("")
+    //     $(item).html(content[index])
+    //   });
+    // }
 
 
   });
