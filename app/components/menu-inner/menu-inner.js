@@ -20,7 +20,6 @@ $(function(){
     var $menu_items = $(".menu-inner__items", $element );
     var $elements = [];
     addButtons();
-    log(localStorage.getItem('pageNow')); 
 
 
     data.menu.list.forEach(function(item,index){
