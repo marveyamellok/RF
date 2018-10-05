@@ -1,0 +1,38 @@
+include components/page/page.pug
+include components/mixins/mixins.pug
+include components/content-part-column/content-part-column.pug
+include components/column-item/column-item.pug
+include components/contact/contact.pug
+include components/inner-part/inner-part.pug
+include components/menu-inner/menu-inner.pug
+include components/pug-list/pug-list.pug
+
++page('')
+  //- +menu-inner
+  +menu-inner()
+  //- +menu-inner(data.menu)
+  //- +inner-part(data.content.save_and_multiply)
+  .inner-part
+    .inner-part__image
+      img(src="images/inner-illustrations-4.png")
+    .inner-part-content
+      h2.inner-part__title Решения для вашей семьи и консалтинг
+      .inner-part-column 
+        .inner-part__text
+          span.inner-part__line
+          | Услуги профессиональных посредников для решения задач по структурированию владения активами и вопросам наследования  
+        .inner-part__text
+          span.inner-part__line
+          | Налоговое планирование и юридическое сопровождение личных активов в России и за рубежом  
+        .inner-part__text
+          span.inner-part__line
+          | Комплексные решения по приобретению и финансированию крупных активов: коммерческая и жилая недвижимость в России и за рубежом, самолеты, яхты  
+        .inner-part__text
+          span.inner-part__line
+          | Финансовая защита благосостояния семьи — индивидуальные программы страхования жизни  
+        .inner-part__text
+          span.inner-part__line
+          | Поддержка в решении индивидуальных запросов вашей семьи  
+        .inner-part__text
+          span.inner-part__line
+          | Участие в наиболее ярких событиях культурной жизни Москвы  

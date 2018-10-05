@@ -11,13 +11,13 @@ $(function () {
 
   $(window).on( "main:ready", function( e, _data ) {
     data = _data;
-    showContent();
+    // showContent();
   });
 
   $(window).on("main:page_changed", function( e, _data){
 
     data = _data;
-    hideContent( showContent );
+    // hideContent( showContent );
 
   });
 

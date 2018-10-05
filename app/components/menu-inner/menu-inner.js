@@ -39,9 +39,9 @@ $(function(){
       $($menu_item).removeClass("menu-inner__item_choosed");
       $(this).addClass("menu-inner__item_choosed");
 
-      page = $(this).data("page");
+      // page = $(this).data("page");
 
-      $(window).trigger( "menu:change_page", page );
+      // $(window).trigger( "menu:change_page", page );
 
     });
 
@@ -62,9 +62,7 @@ $(function(){
         var $e = $(e);
         $e.html( $e.data( "content" )[ lang ] );
       });
-
     }
-
 
     //
     function addContent(content, item, page){
@@ -85,9 +83,7 @@ $(function(){
           break;
 
       }
-
     }
-
 
     //
     function addButtons(){

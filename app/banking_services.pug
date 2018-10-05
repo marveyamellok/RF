@@ -1,0 +1,35 @@
+include components/page/page.pug
+include components/mixins/mixins.pug
+include components/content-part-column/content-part-column.pug
+include components/column-item/column-item.pug
+include components/contact/contact.pug
+include components/inner-part/inner-part.pug
+include components/menu-inner/menu-inner.pug
+include components/pug-list/pug-list.pug
+
++page('')
+  //- +menu-inner
+  +menu-inner()
+  //- +menu-inner(data.menu)
+  //- +inner-part(data.content.save_and_multiply)
+  .inner-part
+    .inner-part__image
+      img(src="images/inner-illustrations-3.png")
+    .inner-part-content
+      h2.inner-part__title Банковское обслуживание
+      .inner-part-column 
+        .inner-part__text
+          span.inner-part__line
+          | Дистанционное обслуживание счетов 
+        .inner-part__text
+          span.inner-part__line
+          | Специальный курс конвертации валют, в том числе в режиме онлайн в системах R-Online, R-Dealer 
+        .inner-part__text
+          span.inner-part__line
+          | Широкий выбор премиальных дебетовых и кредитных карт Visa и МasterCard 
+        .inner-part__text
+          span.inner-part__line
+          | Расчеты через аккредитивы 
+        .inner-part__text
+          span.inner-part__line
+          | Счета в одиннадцати валютах: рублях, долларах США, евро, швейцарских франках, фунтах стерлингов, японских йенах, норвежских кронах, шведских кронах, австралийских долларах, канадских долларах, китайских юанях      
