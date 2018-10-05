@@ -1,7 +1,9 @@
 $(function(){
+  var $element = $(".menu-inner");
+  if( !$element.length ) return;
 
   var page;
-  var $element = $(".menu-inner");
+  
   var data;
   var $menu_item;
 
