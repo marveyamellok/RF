@@ -3,7 +3,6 @@ $(function(){
   if( !$element.length ) return;
 
   var page;
-  
   var data;
   var $menu_item;
 

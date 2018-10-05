@@ -4,8 +4,10 @@ $(function () {
   if( !$element.length ) return;
 
   var data;
-  var $height;
   var is_animated = false;
+  var $title; 
+  var $text; 
+  var $image; 
 
   $(window).on( "main:ready", function( e, _data ) {
     data = _data;
@@ -25,9 +27,9 @@ $(function () {
     }
 
     is_animated = true;
-    TweenMax.to( $(".inner-part__title", $element ), .4, {opacity: 0, x:20, ease: Power3.easeIn});
-    TweenMax.to( $(".inner-part__image", $element ), .5, {delay: .1, rotation: 720, opacity: 0, scale: 0});
-    TweenMax.to( $(".inner-part-column", $element ), .3, {delay: .1, y: 5, opacity: 0, onComplete:function() {
+    TweenMax.to( $title, .4, {opacity: 0, x:20, ease: Power3.easeIn});
+    TweenMax.to( $image, .5, {delay: .1, rotation: 720, opacity: 0, scale: 0});
+    TweenMax.to( $text, .3, {delay: .1, y: 5, opacity: 0, onComplete:function() {
       is_animated = false;
       tweenComplete();  
       }
@@ -44,9 +46,14 @@ $(function () {
     var theCompiledHtml = theTemplate( { image: context.image, title: context.title[lang], text:context.text[lang] } );
 
     $element.html(theCompiledHtml);
-    TweenMax.fromTo( $(".inner-part__title", $element ), .4, { opacity: 0, x:-20 }, { x:0, opacity: 1, ease: Power3.easeOut});
-    TweenMax.fromTo($(".inner-part-column", $element ), .5, {delay: .1, y:  5, opacity: 0}, {y: 0, opacity: 1});
-    TweenMax.fromTo($(".inner-part__image", $element ), .5, {rotation: 720, opacity: 0, scale: 0}, {rotation: 0, opacity: 1, scale: 1});
+
+    $title = $(".inner-part__title", $element);
+    $text = $(".inner-part-column", $element);
+    $image = $(".inner-part__image", $element);
+
+    TweenMax.fromTo( $title, .4, { opacity: 0, x:-20 }, { x:0, opacity: 1, ease: Power3.easeOut});
+    TweenMax.fromTo($text, .5, {delay: .1, y:  5, opacity: 0}, {y: 0, opacity: 1});
+    TweenMax.fromTo($image, .5, {rotation: 720, opacity: 0, scale: 0}, {rotation: 0, opacity: 1, scale: 1});
   }
 
 });
