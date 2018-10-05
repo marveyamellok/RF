@@ -55,10 +55,12 @@
 // NEW
 @mixin PHONE-N{
     @media only screen and (max-width: $WIDTH-PHONE-N - 1) { @content; }
+    // @at-root .is_phone { @content; }
 }
 
 @mixin TABLET-N{
     @media only screen and (min-width: $WIDTH-PHONE-N) and (max-width: $WIDTH-TABLET-N - 1) { @content; }
+    // @at-root .is_phone { @content; }
 }
 
 @mixin DESKTOP-N{

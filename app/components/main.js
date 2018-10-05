@@ -13,15 +13,14 @@ $(function(){
     
     data = _data; 
     // console.log("#Main: data is loaded: ", data);
+    // var width = $(window).innerWidth();
+    // adaptive(width);
     
     $(window).trigger( "main:ready", data );
   });
 
 
   $(window).on('language:changed', function( e, language_name ) {
-
-    log(language_name)
-
 
     data.header.current_language = language_name;
     $(window).trigger( "main:page_changed", data );
@@ -57,6 +56,20 @@ $(function(){
     data.header.current_page = page_name;
     $(window).trigger( "main:page_changed", data );
   });
+
+  $(window).resize(function(){
+    adaptive(window.innerWidth);
+  })
+
+  function adaptive(width){
+
+    $("body")
+      .toggleClass("is_phone", width < 768 )
+      .toggleClass("is_tablet", width >= 768 && width < 1024 )
+      .toggleClass("is_desktop", width >= 1024 )
+    ;
+
+  }
 
 
   // $('body').data('app-data', { start_page: 'save_and_blabla' });

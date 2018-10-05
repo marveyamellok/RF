@@ -359,6 +359,7 @@
 		margin: 0 auto;
 		text-decoration: none !important;
 		margin-top: $PHONE-PT_PHONE;
+    background-color: red;
 	}
 
 	@include TABLET-N {
@@ -375,6 +376,10 @@
 		// font-size: 32rem;
 		line-height: $PHONE-H_TABLET_REM;
 	}
+  
+  @at-root .is_phone &{
+    background-color: red;
+  }
 
 }
 
