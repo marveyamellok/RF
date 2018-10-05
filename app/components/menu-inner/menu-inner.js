@@ -6,6 +6,11 @@ $(function(){
   var data;
   var $menu_item;
 
+  var root = null;
+  var useHash = true; // Defaults to: false
+  var hash = ''; // Defaults to: '#'
+  var router = new Navigo(root, useHash, hash);
+
   $(window).on( "main:ready", function( e, _data ) {
     
     //
@@ -15,6 +20,7 @@ $(function(){
     var $menu_items = $(".menu-inner__items", $element );
     var $elements = [];
     addButtons();
+    log(localStorage.getItem('pageNow')); 
 
 
     data.menu.list.forEach(function(item,index){
@@ -27,9 +33,20 @@ $(function(){
       addContent( content, item, page );
 
       $menu_item = $(".menu-inner__item", $element );
-      $($menu_item[0]).addClass("menu-inner__item_choosed");
 
+      if(localStorage.getItem("pageNow") !== null){
+        var pageNow = localStorage.getItem('pageNow');
+
+        if (pageNow == $($menu_item[index]).data("page")){
+          $($menu_item[index]).addClass("menu-inner__item_choosed");
+        }
+        
+      } else {
+        $($menu_item[0]).addClass("menu-inner__item_choosed");
+      }      
     });
+
+    
 
 
 
@@ -39,7 +56,10 @@ $(function(){
       $($menu_item).removeClass("menu-inner__item_choosed");
       $(this).addClass("menu-inner__item_choosed");
 
-      // page = $(this).data("page");
+      page = $(this).data("page");
+      localStorage.setItem('pageNow', page)
+
+      router.navigate('/' + page);
 
       // $(window).trigger( "menu:change_page", page );
 

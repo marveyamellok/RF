@@ -1,0 +1,25 @@
+include components/page/page.pug
+include components/mixins/mixins.pug
+include components/content-part-column/content-part-column.pug
+include components/column-item/column-item.pug
+include components/contact/contact.pug
+include components/inner-part/inner-part.pug
+include components/menu-inner/menu-inner.pug
+include components/pug-list/pug-list.pug
+
++page('')
+  //- +menu-inner
+  +menu-inner()
+  //- +menu-inner(data.menu)
+  //- +inner-part(data.content.save_and_multiply)
+  .inner-part
+    .inner-part__image
+      img(src="images/inner-illustrations-1.png")
+    .inner-part-content
+      h2.inner-part__title Сохранить и приумножить
+      .inner-part-column 
+        p Московский офис Friedrich Wilhelm Raiffeisen предлагает 
+        p Широкий выбор кредитных продуктов в России — кредит на покупку жилой недвижимости; 
+        p кредит под залог недвижимости — как жилой, так и коммерческой; потребительный беззалоговый кредит; 
+        p кредит, обеспеченный залогом собственного векселя Банка 
+        p Выпуск банковских гарантий с целью обеспечения обязательств перед третьими сторонами — гарантия платежа, гарантия возврата аванса и другие виды гарантий.             
