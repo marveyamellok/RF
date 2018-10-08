@@ -60,7 +60,8 @@ $(function(){
 
       $elements.forEach(function(e,i){
         var $e = $(e);
-        $($e > "a").html( $e.data( "content" )[ lang ] );
+        var link = $($e).children();
+        $(link).html( $e.data( "content" )[ lang ] );
       });
     }
 
