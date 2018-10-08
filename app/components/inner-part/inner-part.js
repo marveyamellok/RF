@@ -18,7 +18,6 @@ $(function () {
   });
 
   $(window).on("main:page_changed", function( e, _data){
-
     data = _data;
     hideContent( showContent );
 
@@ -50,7 +49,6 @@ $(function () {
     var pageNow = data.header.current_page;
     var lang = data.header.current_language;
     var context = data.content[pageNow];
-    console.log("context: ", context );
    
     var theCompiledHtml = theTemplate( { image: context.image, title: context.title[lang], text:context.text[lang] } );
 

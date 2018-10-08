@@ -1,13 +1,13 @@
 {
   "header":{
     "current_page": "save_and_multiply",
-    "current_language": "en",
+    "current_language": "ru",
     "phoneNumber": "+7 (495) 662 76 77",
     "phoneLink": "tel:+7-495-662-7677",
     "type": "addLinksButton",
 
     "langs":{
-      "default": "de",
+      "default": "ru",
       "list_2": [
         {"lang":"ru"},
         {"lang":"en"},

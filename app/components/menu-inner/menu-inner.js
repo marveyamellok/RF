@@ -7,7 +7,6 @@ $(function(){
   var $menu_item;
 
   $(window).on( "main:ready", function( e, _data ) {
-    
     //
     data = _data;
     var lang;
@@ -16,9 +15,7 @@ $(function(){
     var $elements = [];
     addButtons();
 
-
     data.menu.list.forEach(function(item,index){
-
       if (item.text){
         content = item.text;
         page = item.page;
@@ -27,9 +24,12 @@ $(function(){
       addContent( content, item, page );
 
       $menu_item = $(".menu-inner__item", $element );
-      $($menu_item[0]).addClass("menu-inner__item_choosed");     
+
+      getActiveClass($menu_item, index)
+
     });
 
+   
 
     //
     $($menu_item).on('click', function(e){
@@ -40,17 +40,31 @@ $(function(){
       $(this).addClass("menu-inner__item_choosed");
 
       page = $(this).data("page");
+      data.header.current_page = page;
 
-      $(window).trigger( "menu:change_page", page );
-
+      $(window).trigger( "main:page_changed", data);
+      
     });
 
     $(window).on("main:page_changed", function(){
       
       changeContent();
 
+      $($menu_item).removeClass("menu-inner__item_choosed");
+      
+      $.each($menu_item, function(index, item){
+        getActiveClass($menu_item, index)
+      });
+      
+
     });
 
+    //
+    function getActiveClass(elem, i){
+      if ($(elem[i]).data("page") == data.header.current_page){
+        $(elem[i]).addClass("menu-inner__item_choosed");
+      }
+    }
 
 
     //

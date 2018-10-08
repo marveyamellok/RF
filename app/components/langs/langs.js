@@ -5,9 +5,11 @@ $(window).on( "main:ready", function( e, data ) {
   
   console.log('#langs: inited');
 
-  var inner = $('<div class="langs"><p>' + data.header.langs.default + '</p><ul class="langs__items"></ul></div>').appendTo($element);
+  var inner = $('<div class="langs"><p>' + data.header.current_language + '</p><ul class="langs__items"></ul></div>').appendTo($element);
+  var $langBlock = $(".langs p");
+  $(window).trigger( "main:page_changed", data);
 
-  data.header.current_language = data.header.langs.default;
+  
 
   var obj = data.header.langs.list
   for (key in obj) {
@@ -20,16 +22,23 @@ $(window).on( "main:ready", function( e, data ) {
         $(".langs p", $element).html($lang_new);
         var lang = $lang_new;
 
-        $(window).trigger( "language:changed", lang);
+        data.header.current_language = lang;
+
+        $(window).trigger( "main:page_changed", data);
       })
     ;
 
   }
 
+  $(window).on( "main:page_changed", function(e, _data){
+    data = _data;
+    var language = data.header.current_language;
+    $($langBlock).html(language)
+  });
+
+
   $(".langs", $element).on("click", function(){
     $(".langs__items", $element).toggle(".langs__items_open")
   });
-
-  // $(window).trigger( "language:changed", data.header.langs.list[0].lang );
 
 });

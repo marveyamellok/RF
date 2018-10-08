@@ -17,11 +17,13 @@ $(function(){
   // var router = new Navigo(null, false);
 
   router
-    .on( '/:page', function (params) {
-      console.log( 'router: ', params.page );
+    .on( ':language/:page', function (params) {
+
       data.header.current_page = params.page;
-      // params.action = data.header.current_page;
+      data.header.current_language = params.language;
+
       $(window).trigger( "main:page_changed", data );
+
     });
 
   // router.notFound(function (query) {
@@ -33,50 +35,19 @@ $(function(){
   $.getJSON('assets/data.json', function(_data){
     
     data = _data; 
+    router.resolve();
 
     $(window).trigger( "main:ready", data );
 
-    router.resolve();
-
   });
 
 
-  $(window).on('language:changed', function( e, language_name ) {
+  $(window).on( "main:page_changed", function(e, _data ){
 
-    data.header.current_language = language_name;
-    $(window).trigger( "main:page_changed", data );
-
-    //
-    $('[data-trnslt]').each(function(i,e){
-      var $e = $(e);
-      var id= $e.data('trnslt');
-      var translate = data.translates[id];
-      
-      if( !translate ) {
-        console.warn("there's no element whith such id", id );
-        return;
-      }
-
-      if (Array.isArray(translate))
-        translate = translate[i];
-
-      translate = translate[language_name];
-      $e.html( translate );
-    });
-
-  });
-
-
-  // $(window).on( "content:change", function(e, page_name ){
-  //   data.header.current_page = page_name;
-
-  //   $(window).trigger( "main:page_changed", data );
-  // });
-
-  $(window).on( "menu:change_page", function(e, page_name ){
-    console.log('menu:change_page', page_name );
-    router.navigate( '/'+page_name );
-    // $(window).trigger( "main:page_changed", data );
+    data = _data;
+    var language = data.header.current_language;
+    var page = data.header.current_page;
+    router.navigate( '/' + data.header.current_language + "/" + data.header.current_page );
 
   });
 
@@ -93,8 +64,5 @@ $(function(){
     ;
 
   }
-
-
-  // $('body').data('app-data', { start_page: 'save_and_blabla' });
 
 });
