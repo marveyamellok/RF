@@ -9,6 +9,9 @@ $(function () {
   var $text; 
   var $image; 
 
+  var theTemplateScript = $("#entry-template").html();
+  var theTemplate = Handlebars.compile(theTemplateScript);
+
   $(window).on( "main:ready", function( e, _data ) {
     data = _data;
     // showContent();
@@ -17,12 +20,18 @@ $(function () {
   $(window).on("main:page_changed", function( e, _data){
 
     data = _data;
-    // hideContent( showContent );
+    hideContent( showContent );
 
   });
 
   function hideContent(tweenComplete){
+
     if( is_animated ){
+      return;
+    }
+
+    if( !$title ) {
+      tweenComplete();
       return;
     }
 
@@ -41,8 +50,8 @@ $(function () {
     var pageNow = data.header.current_page;
     var lang = data.header.current_language;
     var context = data.content[pageNow];
-    var theTemplateScript = $("#entry-template").html();
-    var theTemplate = Handlebars.compile(theTemplateScript);
+    console.log("context: ", context );
+   
     var theCompiledHtml = theTemplate( { image: context.image, title: context.title[lang], text:context.text[lang] } );
 
     $element.html(theCompiledHtml);

@@ -266,7 +266,8 @@ $list-p_desktop: 40px;
 	@include FONT-MENU();
 
 	cursor: pointer;
-	pointer-events: auto;
+  // pointer-events: auto;
+	pointer-events: none;
 
 	&:nth-of-type(1){
 		margin-top: 0;
@@ -279,7 +280,8 @@ $list-p_desktop: 40px;
 	a{
 		color: $sdark;
 		text-decoration: none;
-    pointer-events: none;
+    // pointer-events: none;
+    pointer-events: all;
 	}
 
 	@include PHONE-N{

@@ -5,19 +5,9 @@ $(window).on( "main:ready", function( e, data ) {
   
   console.log('#langs: inited');
 
-  if(localStorage.getItem("langNow") !== null){
+  var inner = $('<div class="langs"><p>' + data.header.langs.default + '</p><ul class="langs__items"></ul></div>').appendTo($element);
 
-    var langNow = localStorage.getItem('langNow');
-    data.header.current_language = langNow;
-
-    var inner = $('<div class="langs"><p>' + data.header.current_language + '</p><ul class="langs__items"></ul></div>').appendTo($element);
-
-  } else {
-
-    var inner = $('<div class="langs"><p>' + data.header.langs.default + '</p><ul class="langs__items"></ul></div>').appendTo($element);
-    data.header.current_language = data.header.langs.default;
-
-  }
+  data.header.current_language = data.header.langs.default;
 
   var obj = data.header.langs.list
   for (key in obj) {
@@ -29,7 +19,6 @@ $(window).on( "main:ready", function( e, data ) {
         var $lang_new = $(this).html();
         $(".langs p", $element).html($lang_new);
         var lang = $lang_new;
-        localStorage.setItem('langNow', lang)
 
         $(window).trigger( "language:changed", lang);
       })
@@ -38,7 +27,9 @@ $(window).on( "main:ready", function( e, data ) {
   }
 
   $(".langs", $element).on("click", function(){
-    $(".langs__items", $element).toggle(".langs__items_open");
+    $(".langs__items", $element).toggle(".langs__items_open")
   });
+
+  // $(window).trigger( "language:changed", data.header.langs.list[0].lang );
 
 });

@@ -6,11 +6,6 @@ $(function(){
   var data;
   var $menu_item;
 
-  var root = null;
-  var useHash = true; // Defaults to: false
-  var hash = ''; // Defaults to: '#'
-  var router = new Navigo(root, useHash, hash);
-
   $(window).on( "main:ready", function( e, _data ) {
     
     //
@@ -32,35 +27,21 @@ $(function(){
       addContent( content, item, page );
 
       $menu_item = $(".menu-inner__item", $element );
-
-      if(localStorage.getItem("pageNow") !== null){
-        var pageNow = localStorage.getItem('pageNow');
-
-        if (pageNow == $($menu_item[index]).data("page")){
-          $($menu_item[index]).addClass("menu-inner__item_choosed");
-        }
-        
-      } else {
-        $($menu_item[0]).addClass("menu-inner__item_choosed");
-      }      
+      $($menu_item[0]).addClass("menu-inner__item_choosed");     
     });
-
-    
-
 
 
     //
-    $($menu_item).on('click', function(){
+    $($menu_item).on('click', function(e){
+      
+      e.preventDefault();
 
       $($menu_item).removeClass("menu-inner__item_choosed");
       $(this).addClass("menu-inner__item_choosed");
 
       page = $(this).data("page");
-      localStorage.setItem('pageNow', page)
 
-      router.navigate('/' + page);
-
-      // $(window).trigger( "menu:change_page", page );
+      $(window).trigger( "menu:change_page", page );
 
     });
 
@@ -79,7 +60,7 @@ $(function(){
 
       $elements.forEach(function(e,i){
         var $e = $(e);
-        $e.html( $e.data( "content" )[ lang ] );
+        $($e > "a").html( $e.data( "content" )[ lang ] );
       });
     }
 
@@ -94,6 +75,7 @@ $(function(){
 
         default:
           var $item =
+            // $('<li class="menu-inner__item" data-page="' + page +  '"><a href="#' + page +'" data-use-city="true" class="menu-inner__item-link">'+ content[lang] + '</a></li>' )
             $('<li class="menu-inner__item" data-page="' + page +  '"><a href="#" data-use-city="true" class="menu-inner__item-link">'+ content[lang] + '</a></li>' )
               .appendTo( $menu_items )
               .data('content', content )

@@ -9,14 +9,35 @@ $(function(){
 
   var data;
 
+  // >>> router >>>
+  var _root = null;
+  var useHash = true; 
+  var hash = '#'; 
+  var router = new Navigo(_root, useHash, hash);
+  // var router = new Navigo(null, false);
+
+  router
+    .on( '/:page', function (params) {
+      console.log( 'router: ', params.page );
+      data.header.current_page = params.page;
+      // params.action = data.header.current_page;
+      $(window).trigger( "main:page_changed", data );
+    });
+
+  // router.notFound(function (query) {
+  //   console.log('not found', query);
+  // });
+
+  // <<< router <<<
+
   $.getJSON('assets/data.json', function(_data){
     
     data = _data; 
-    // console.log("#Main: data is loaded: ", data);
-    // var width = $(window).innerWidth();
-    // adaptive(width);
-    
+
     $(window).trigger( "main:ready", data );
+
+    router.resolve();
+
   });
 
 
@@ -46,15 +67,17 @@ $(function(){
   });
 
 
-  $(window).on( "content:change", function(e, page_name ){
-    data.header.current_page = page_name;
-    $(window).trigger( "main:page_changed", data );
-  });
+  // $(window).on( "content:change", function(e, page_name ){
+  //   data.header.current_page = page_name;
 
+  //   $(window).trigger( "main:page_changed", data );
+  // });
 
   $(window).on( "menu:change_page", function(e, page_name ){
-    data.header.current_page = page_name;
-    $(window).trigger( "main:page_changed", data );
+    console.log('menu:change_page', page_name );
+    router.navigate( '/'+page_name );
+    // $(window).trigger( "main:page_changed", data );
+
   });
 
   $(window).resize(function(){
